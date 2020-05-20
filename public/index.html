@@ -1,0 +1,105 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <base href="/" />
+    <link rel="shortcut icon" href="images/assiettes.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="http://fonts.googleapis.com/css?family=Ubuntu:bold"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <title>Meal sharing website</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="brand-box">
+        <span class="brand">Our goal is<br />Excellence</span>
+      </div>
+      <div class="text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary-main">Meal Sharing website</span>
+          <span class="heading-primary-sub"
+            >The revolution of net meal ordering
+          </span>
+        </h1>
+        <a href="#home" class="down-arr">&#8595;</a>
+      </div>
+    </header>
+    <h1 class="text-center mt-5">
+      Welcome!
+    </h1> 
+    </div>
+    <div id="root"></div>
+    
+    <div class="form-popup" id="myForm">
+      <form action="/api/reservations" method="POST" class="form-container">
+        <label for="number_of_guests"><b>number_of_guests</b></label>
+        <input
+          type="number"
+          id="number_of_guests"
+          placeholder="Enter number_of_guests"
+          name="number_of_guests"
+          required
+        />
+
+        <label for="meal_id"><b>meal_id</b></label>
+        <input
+          type="number"
+          id="meal_id"
+          placeholder="Enter meal_id"
+          name="meal_id"
+          required
+        />
+
+        <label for="email"><b>Email</b></label>
+        <input
+          type="text"
+          id="email"
+          placeholder="Enter email"
+          name="email"
+          required
+        />
+
+        <label for="Phone"><b>Phone</b></label>
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Enter Phone number"
+          name="phone"
+          required
+        />
+
+        <label for="name"><b>Name</b></label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter Name"
+          name="name"
+          required
+        />
+
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">
+          Close
+        </button>
+      </form>
+    </div> 
+    
+      <p id="message"></p>
+    <script>
+      function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+    </script>
+  </body>
+</html>
